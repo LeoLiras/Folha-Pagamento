@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//Cria a classe Pessoa
  class Pessoa
     {
     protected:
@@ -10,6 +11,7 @@ using namespace std;
         int rg;
         string nome;
     public:
+        //Construtor
         Pessoa(int _cpf, int _rg, string _nome);
 
         string getNome();
@@ -18,7 +20,7 @@ using namespace std;
         void setNome(string _nome);
         
     };
-
+    //Construtor
     Pessoa::Pessoa(int _cpf, int _rg, string _nome){
         cpf = _cpf;
         rg = _rg;
@@ -43,17 +45,20 @@ using namespace std;
     {
         cpf = _cpf;
     }
-
+    
+    //Cria a classe Colaborador, que é uma classe filha de Pessoa.
     class Colaborador : public Pessoa{
         private:
             string cargo;
             float salario_hora;
             float horas_trabalhadas;
         public:
+            //Construtor
             Colaborador(int _cpf, int _rg, string _nome, float _salario, float _horas_trabalhadas);
 
     };
 
+    //Construtor
     Colaborador::Colaborador(int _cpf, int _rg, string _nome, float _salario_hora, float _horas_trabalhadas) : Pessoa(_cpf, _rg, _nome)
     {
         cpf = _cpf;
@@ -66,6 +71,6 @@ using namespace std;
     
 
 int main(){
-    Pessoa p1 = Pessoa (1, 2, "Pedro");
+
     return 0;
 }

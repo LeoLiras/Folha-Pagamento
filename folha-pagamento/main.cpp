@@ -6,6 +6,10 @@
 
 using namespace std;
 
+void registro(){
+    
+}
+
 void menu(){
     int opt;
     cout << "========== Menu ==========" << endl;
@@ -16,6 +20,7 @@ void menu(){
 
     switch(opt){
         case 1:
+            registro();
             break;
         case 2:
             exit(0);

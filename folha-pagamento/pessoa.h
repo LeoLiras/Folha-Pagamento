@@ -1,5 +1,9 @@
 #include <string>
 
+#ifndef PESSOA_H
+#define PESSOA_H
+#endif
+
 using namespace std;
 
 //Cria a classe Pessoa

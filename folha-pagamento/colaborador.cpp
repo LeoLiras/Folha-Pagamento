@@ -1,6 +1,5 @@
  #include <string>
  #include "colaborador.h"
- #include "pessoa.h"
  
  using namespace std;
 

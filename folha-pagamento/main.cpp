@@ -1,19 +1,21 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string>
+#include <locale.h>
 
 #include "colaborador.h"
 
 using namespace std;
 
 void registro(){
+
     int cpf, rg;
     string nome;
     float salario_hora, horas_trabalhadas;
 
     cout << "Insira o nome do colaborador: "<< endl;
     cin >> nome;
-    getchar();
+    fflush(stdin);
     cout << "Insira o cpf do colaborador: "<< endl;
     cin >> cpf;
     cout << "Insira o rg do colaborador: "<< endl;

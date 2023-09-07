@@ -3,6 +3,7 @@
 #include <string>
 #include <locale.h>
 #include <ctime>
+#include <fstream>
 
 #include "colaborador.h"
 

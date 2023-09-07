@@ -31,6 +31,10 @@ void registro(){
     time_t data = time(0);
     tm* data_atual = localtime(&data);
 
+    string titulo = "folha-" + data_atual->tm_mday + '-' + (data_atual->tm_mday + 1) + '.txt';
+
+    ifstream input(titulo);
+
 }
 
 void menu(){

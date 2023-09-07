@@ -40,6 +40,10 @@ void registro(){
 
 }
 
+void escrever_arquivo(){
+    
+}
+
 void menu(){
     setlocale(LC_ALL, "");
 

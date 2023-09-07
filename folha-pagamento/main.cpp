@@ -15,21 +15,20 @@ void registro(){
     string nome;
     float salario_hora, horas_trabalhadas;
 
-    cout << "Insira o nome do colaborador: "<< endl;
-    getchar();
-    cin >> nome;
-    fflush(stdin);
-    cout << "Insira o cpf do colaborador: "<< endl;
-    cin >> cpf;
-    cout << "Insira o rg do colaborador: "<< endl;
-    cin >> rg;
-    cout << "Insira o salário por hora do colaborador: "<< endl;
-    cin >> salario_hora;
-    cout << "Insira a quantidade de horas trabalhadas no mês: "<< endl;
-    cin >> nome;
-
-    
-
+    while(nome != "sair"){
+        cout << "Insira o nome do colaborador: "<< endl;
+        getchar();
+        cin >> nome;
+        fflush(stdin);
+        cout << "Insira o cpf do colaborador: "<< endl;
+        cin >> cpf;
+        cout << "Insira o rg do colaborador: "<< endl;
+        cin >> rg;
+        cout << "Insira o salário por hora do colaborador: "<< endl;
+        cin >> salario_hora;
+        cout << "Insira a quantidade de horas trabalhadas no mês: "<< endl;
+        cin >> nome;
+    }
 }
 
 void escrever_arquivo(){

@@ -28,6 +28,11 @@ void registro(){
     cout << "Insira a quantidade de horas trabalhadas no mês: "<< endl;
     cin >> nome;
 
+    
+
+}
+
+void escrever_arquivo(){
     time_t data = time(0);
     tm* data_atual = localtime(&data);
 
@@ -37,11 +42,6 @@ void registro(){
     arq.open(titulo, ios_base::app);
     arq << titulo;
     arq.close();
-
-}
-
-void escrever_arquivo(){
-    
 }
 
 void menu(){

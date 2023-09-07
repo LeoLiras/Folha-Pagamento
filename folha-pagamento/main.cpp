@@ -14,6 +14,7 @@ void registro(){
     float salario_hora, horas_trabalhadas;
 
     cout << "Insira o nome do colaborador: "<< endl;
+    getchar();
     cin >> nome;
     fflush(stdin);
     cout << "Insira o cpf do colaborador: "<< endl;
@@ -27,6 +28,8 @@ void registro(){
 }
 
 void menu(){
+    setlocale(LC_ALL, "");
+
     int opt;
     cout << "========== Menu ==========" << endl;
     cout << "[1] - Iniciar Registro" << endl;

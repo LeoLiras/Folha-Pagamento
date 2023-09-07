@@ -31,9 +31,12 @@ void registro(){
     time_t data = time(0);
     tm* data_atual = localtime(&data);
 
-    string titulo = "folha-" + data_atual->tm_mday + '-' + (data_atual->tm_mday + 1) + '.txt';
+    string titulo = "folha-" + to_string(data_atual->tm_mday) + '-' + to_string(data_atual->tm_mday + 2) + '-' + to_string(data_atual->tm_year + 1900) + ".txt";
 
-    ifstream input(titulo);
+    ofstream arq;
+    arq.open(titulo, ios_base::app);
+    arq << titulo;
+    arq.close();
 
 }
 

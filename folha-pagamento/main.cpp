@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string>
 #include <locale.h>
+#include <ctime>
 
 #include "colaborador.h"
 
@@ -25,6 +26,10 @@ void registro(){
     cin >> salario_hora;
     cout << "Insira a quantidade de horas trabalhadas no mês: "<< endl;
     cin >> nome;
+
+    time_t data = time(0);
+    tm* data_atual = localtime(&data);
+
 }
 
 void menu(){

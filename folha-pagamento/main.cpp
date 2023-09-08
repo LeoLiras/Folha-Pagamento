@@ -31,10 +31,12 @@ void registro(){
 
         Colaborador col = Colaborador(cpf, rg, nome, salario_hora, horas_trabalhadas);
 
+        escrever_arquivo(col);
+
     }
 }
 
-void escrever_arquivo(){
+void escrever_arquivo(Colaborador col){
     time_t data = time(0);
     tm* data_atual = localtime(&data);
 

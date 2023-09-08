@@ -29,6 +29,6 @@
         horas_trabalhadas = _horas_trabalhadas;
     }
 
-    float salario_total(float _salario_hora, float _horas_trabalhadas){
+    float Colaborador::salario_total(float _salario_hora, float _horas_trabalhadas){
         return _salario_hora * _horas_trabalhadas;
     }

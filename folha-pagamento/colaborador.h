@@ -11,7 +11,7 @@
             float horas_trabalhadas;
         public:
             //Construtor
-            Colaborador(int _cpf, int _rg, string _nome, float _salario, float _horas_trabalhadas);
+            Colaborador(int _cpf, int _rg, string _nome, float _salario_hora, float _horas_trabalhadas);
             float getSalario();
             float getHoras();
             void setSalario(float _salario);

@@ -9,6 +9,16 @@
 
 using namespace std;
 
+void escrever_arquivo(Colaborador col);
+void registro();
+void menu();
+
+
+int main(){
+    menu();
+    return 0;
+}
+
 void registro(){
 
     int cpf, rg;
@@ -44,7 +54,7 @@ void escrever_arquivo(Colaborador col){
 
     ofstream arq;
     arq.open(titulo, ios_base::app);
-    arq << titulo;
+    arq << "Colaborador: " + col.getNome();
     arq.close();
 }
 
@@ -67,9 +77,4 @@ void menu(){
             break;
     }
 
-}
-
-int main(){
-    menu();
-    return 0;
 }

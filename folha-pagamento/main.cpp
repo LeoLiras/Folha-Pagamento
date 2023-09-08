@@ -51,6 +51,7 @@ void registro(){
 }
 
 void escrever_arquivo(Colaborador col){
+   
     time_t data = time(0);
     tm* data_atual = localtime(&data);
 

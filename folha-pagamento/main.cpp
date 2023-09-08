@@ -25,11 +25,16 @@ void registro(){
     string nome;
     float salario_hora, horas_trabalhadas;
 
-    while(nome != "sair"){
+    while(true){
         cout << "Insira o nome do colaborador: "<< endl;
         getchar();
         cin >> nome;
         fflush(stdin);
+
+        if(nome == "sair"){
+            break;
+        }
+
         cout << "Insira o cpf do colaborador: "<< endl;
         cin >> cpf;
         cout << "Insira o rg do colaborador: "<< endl;
@@ -42,7 +47,6 @@ void registro(){
         Colaborador col = Colaborador(cpf, rg, nome, salario_hora, horas_trabalhadas);
 
         escrever_arquivo(col);
-
     }
 }
 

@@ -60,7 +60,7 @@ void escrever_arquivo(Colaborador col){
     arq.open(titulo, ios_base::app);
     arq << "==================================================================================================================================================================" << endl;
     arq << "Colaborador: " + col.getNome() << " || CPF: " << col.getCpf() << " || RG: " << col.getRg() << " || Salário/Hora: " << col.getSalario() 
-        << " || Horas trabalhadas no mês: " << col.getHoras() << endl;
+        << " || Horas trabalhadas no mês: " << col.getHoras() << " || Salário mensal total: " << col.salario_total(col.getSalario(), col.getHoras()) << endl;
     arq.close();
 }
 

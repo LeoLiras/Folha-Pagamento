@@ -16,4 +16,5 @@
             float getHoras();
             void setSalario(float _salario);
             void setHoras(float _horas_trabalhadas);
+            float salario_total(float _salario_hora, float _horas_trabalhadas);
     };

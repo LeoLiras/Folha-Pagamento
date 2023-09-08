@@ -27,9 +27,11 @@ void registro(){
         cout << "Insira o salário por hora do colaborador: "<< endl;
         cin >> salario_hora;
         cout << "Insira a quantidade de horas trabalhadas no mês: "<< endl;
-        cin >> nome;
+        cin >> horas_trabalhadas;
 
         Colaborador col = Colaborador(cpf, rg, nome, salario_hora, horas_trabalhadas);
+
+        cout << col.getNome();
 
     }
 }

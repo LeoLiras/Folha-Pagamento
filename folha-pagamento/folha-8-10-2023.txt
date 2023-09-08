@@ -1,1 +1,2 @@
-Colaborador: TesteColaborador: Teste2
+=========================================================Colaborador: Teste || CPF: 1 || RG: 2 || Salário/Hora: 50 || Horas trabalhadas no mês: 44
+=========================================================Colaborador: Teste2 || CPF: 1 || RG: 2 || Salário/Hora: 3 || Horas trabalhadas no mês: 47

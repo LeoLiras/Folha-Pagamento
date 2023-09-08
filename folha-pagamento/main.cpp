@@ -58,7 +58,9 @@ void escrever_arquivo(Colaborador col){
 
     ofstream arq;
     arq.open(titulo, ios_base::app);
-    arq << "Colaborador: " + col.getNome();
+    arq << "========================================================="
+    arq << "Colaborador: " + col.getNome() << " || CPF: " << col.getCpf() << " || RG: " << col.getRg() << " || Salário/Hora: " << col.getSalario() 
+        << " || Horas trabalhadas no mês: " << col.getHoras() << endl;
     arq.close();
 }
 

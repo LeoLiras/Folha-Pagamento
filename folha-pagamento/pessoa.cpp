@@ -10,13 +10,13 @@ using namespace std;
         nome = _nome;
     }
     
+    string Pessoa::getNome(){
+        return nome;
+    }
+    
     void Pessoa::setNome(string _nome)
     {
         nome = _nome;
-    }
-
-    string Pessoa::getNome(){
-        return nome;
     }
     
     void Pessoa::setRg(int _rg)

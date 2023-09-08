@@ -12,3 +12,11 @@
         salario_hora = _salario_hora;
         horas_trabalhadas = _horas_trabalhadas;
     }
+
+    float Colaborador::getSalario(){
+        return salario_hora;
+    }
+
+    float Colaborador::getHoras(){
+        return horas_trabalhadas;
+    }

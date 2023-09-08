@@ -20,3 +20,11 @@
     float Colaborador::getHoras(){
         return horas_trabalhadas;
     }
+
+    void Colaborador::setSalario(float _salario_hora){
+        salario_hora = _salario_hora;
+    }
+
+    void Colaborador::setHoras(float _horas_trabalhadas){
+        horas_trabalhadas = _horas_trabalhadas;
+    }

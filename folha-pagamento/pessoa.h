@@ -18,6 +18,8 @@ using namespace std;
         Pessoa(int _cpf, int _rg, string _nome);
 
         string getNome();
+        int getCpf();
+        int getRg();
         void setCpf(int _cpf);
         void setRg(int _rg);
         void setNome(string _nome);

@@ -9,9 +9,17 @@ using namespace std;
         rg = _rg;
         nome = _nome;
     }
-    
+
     string Pessoa::getNome(){
         return nome;
+    }
+
+    int Pessoa::getCpf(){
+        return cpf;
+    }
+
+    int Pessoa::getRg(){
+        return rg;
     }
     
     void Pessoa::setNome(string _nome)
